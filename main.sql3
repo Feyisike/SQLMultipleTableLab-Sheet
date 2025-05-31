@@ -45,11 +45,4 @@ CREATE TABLE Delivery (
   PRIMARY KEY (DeliveryNumber));
 
 -- using the data in the text files, insert into the tables this information
-BULK INSERT Item
-FROM 'item.txt'
-WITH
-(
- FIRSTROW =1,
- FIELDTERMINATOR = ' ',
- ROWTERMINATOR = '\n'
-);
+
