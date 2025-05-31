@@ -1,0 +1,6 @@
+{
+    "sqltools.useNodeRuntime": true,
+    "db2forzosdeveloperextension.db2sqlservice.port": "3000,3001, 3002",
+    "remote.localPortHost": "allInterfaces",
+    "db2forzosdeveloperextension.db2sqlservice.debugger.sessionManagerPort": "4555,4556"
+}
