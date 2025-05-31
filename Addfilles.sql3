@@ -1,0 +1,10 @@
+-- database: Company.db3
+-- using the data in the text files, insert into the tables this information
+BULK INSERT Item
+FROM 'item.csv'
+WITH
+(
+ FIRSTROW =1,
+ FIELDTERMINATOR = ' ',
+ ROWTERMINATOR = '\n'
+);
