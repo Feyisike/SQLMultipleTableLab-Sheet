@@ -1,10 +1,10 @@
 -- database: /workspaces/SQLMultipleTableLab-Sheet/Company.db3
 -- using the data in the text files, insert into the tables this information
-BULK INSERT Item
-FROM '/workspaces/SQLMultipleTableLab-Sheet/item.csv'
+BULK INSERT Employee
+FROM '/workspaces/SQLMultipleTableLab-Sheet/employee.csv'
 WITH
 (
  FIRSTROW =1,
- FIELDTERMINATOR = 't',
+ FIELDTERMINATOR = ',',
  ROWTERMINATOR = '\n'
 );
