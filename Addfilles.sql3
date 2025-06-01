@@ -3,10 +3,7 @@
 /* This script assumes that the database and tables have already been created.
    If not, please create the database and tables before running this script. */
 -- Import data into Departement table
-IMPORT INTO Department
-FROM '/workspaces/SQLMultipleTableLab-Sheet/department.csv'
-WITH
-(
- FIELDTERMINATOR = ',',
- ROWTERMINATOR = '\n'
-);
+-- Uncomment the following lines to import data from the CSV file into the Department table
+-- To import data from the CSV file into the Department table in SQLite, use the following command in the SQLite shell:
+--.mode csv
+--.import /workspaces/SQLMultipleTableLab-Sheet/department.csv Department
