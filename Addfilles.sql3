@@ -1,10 +1,12 @@
 -- database: /workspaces/SQLMultipleTableLab-Sheet/Company.db3
 -- using the data in the text files, insert into the tables this information
-BULK INSERT Employee
-FROM '/workspaces/SQLMultipleTableLab-Sheet/employee.csv'
+/* This script assumes that the database and tables have already been created.
+   If not, please create the database and tables before running this script. */
+-- Import data into Departement table
+IMPORT INTO Department
+FROM '/workspaces/SQLMultipleTableLab-Sheet/department.csv'
 WITH
 (
- FIRSTROW =1,
  FIELDTERMINATOR = ',',
  ROWTERMINATOR = '\n'
 );
